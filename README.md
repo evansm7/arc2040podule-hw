@@ -11,7 +11,7 @@ The card comprises 5V-3.3V buffering, the MCU, QSPI flash and crystal, and a USB
 
 ![Board plugged into an Acorn A3000](doc/arc2040podule.jpg)
 
-In conjunction with the `arc2040podule` firmware (repo TBD), this podule provides a source of boot-time loaded Relocatable Modules (up to ~2MB, or ~8MB with large SPI flash fitted!) and a USB comms link with a host computer which can be used for file transfer, networking, etc.
+In conjunction with the [arc2040podule firmware](https://github.com/evansm7/arc2040podule), this podule provides a source of boot-time loaded Relocatable Modules (up to ~2MB, or ~8MB with large SPI flash fitted!) and a USB comms link with a host computer which can be used for file transfer, networking, etc.
 
 **This is a work in progress!**  Board v1 was simply an experiment to prove the basic operation.  See below: v1 required extensive modifications to function, so _please do not build V1_.
 
