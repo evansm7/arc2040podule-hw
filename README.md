@@ -1,6 +1,6 @@
 # RP2040-based Acorn Archimedes expansion card
 
-6th October 2021
+22nd October 2021
 
 
 This is a design for an expansion card (or "Podule" in Acorn-words) for the Acorn Archimedes computer.  Instead of the traditional EPROMs and 74-series logic, or PALs, this card uses the Raspberry Pi RP2040 microcontroller to interface directly to the expansion card bus.
@@ -31,6 +31,7 @@ Yes, it's sort of overkill to have two 133MHz processors providing IO for an 8MH
   * Reset button
   * BOOT button next to the Reset button for awkward, but possible, one-handed programming-reboot
   * Spare GPIO pins to a header
+  * Micro-SD connector via SPI
 
 ## Principle of operation
 
@@ -52,6 +53,18 @@ Browse the [schematic](doc/podule_2040_sch.pdf) and [board layout](doc/podule_20
 
 
 # Change log
+
+## v2:
+
+Changes from v1:
+
+  * All points/v1 problems below have been resolved (but crystal still on bottom).
+  * One more GPIO available (removed `NRST_I`).  GPIO header now brings out 4x GPIOs, 3.3V and ground.
+  * Micro-SD footprint using GPIOs (corresponding to SPI1 pins).
+
+
+**v2 has not been validated yet**  Boards are on their way.
+
 
 ## v1:
 
